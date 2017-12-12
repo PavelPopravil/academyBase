@@ -131,10 +131,6 @@ gulp.task('watch', ['browser-sync', 'minify', 'scripts', 'svgSpriteBuild'], func
   gulp.watch("app/js/*.js", browserSync.reload);
 });
 
-
-
-
-
 /* Build */
 gulp.task('clear', ['minify', 'scripts'], function() {
   return del.sync('dist');
